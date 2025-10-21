@@ -1,6 +1,6 @@
 import styles from './styles.module.css'
 
-export function Header() {
+export function Features() {
     return (
         <section id='features' className='featuresSection'>
             <div className='containerGeral'>
