@@ -2,14 +2,14 @@ import styles from './styles.module.css'
 
 export function Header() {
     return (
-        <header className="headerContainer">
+        <header className={styles.headerContainer}>
             <div>
 
-                <h1 className="title">
+                <h1 className={styles.title}>
                     Menu Semanal
                 </h1>
 
-                <a className="ancora">
+                <a className={styles.ancora}>
                     Recursos
                 </a>
 
