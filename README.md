@@ -13,3 +13,4 @@ Subistituir todas as <a> para component Button, q vai ser criado mais tarde.
 
 - Montar pg Home,
 - Montar pg Gerador(menu semanal).
+- Corrigir styles Home page

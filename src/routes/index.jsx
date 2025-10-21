@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 // Importa suas páginas
 import Home from '../pages/Home';
-import Contact from '../pages/Contact';
+import Gerador from '../pages/Gerador';
 
 // Cria o "mapa"
 const router = createBrowserRouter([
@@ -11,8 +11,8 @@ const router = createBrowserRouter([
     element: <Home />, // Mostre a página Home
   },
   {
-    path: "/contato", // Quando acessar /contato
-    element: <Contact />, // Mostre a página Contact
+    path: "/gerador-de-menu-semanal", // Quando acessar /contato
+    element: <Gerador />, // Mostre a página Contact
   },
 ]);
 
