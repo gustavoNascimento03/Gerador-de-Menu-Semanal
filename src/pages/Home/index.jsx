@@ -1,3 +1,4 @@
+import React from 'react';
 import { Header } from '../../components/Header';
 import { Hero } from '../../components/Hero';
 import { Features } from '../../components/Features';
@@ -8,7 +9,7 @@ import styles from './styles.module.css'
 
 export function Home() {
   return (
-    <div className={Styles.corpo}>
+    <div className={styles.page}>
       <Header />
       <Hero />
       <Features />
@@ -18,3 +19,5 @@ export function Home() {
     </div>
   );
 }
+
+export default Home
