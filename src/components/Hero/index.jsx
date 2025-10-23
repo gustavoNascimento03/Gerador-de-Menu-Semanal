@@ -1,4 +1,5 @@
 import styles from './styles.module.css'
+import {Botao} from '../../components/Botao'
 
 export function Hero() {
     return (
@@ -13,11 +14,11 @@ export function Hero() {
                 </p>
 
                 <div className={styles.divAncora}>
-                    <a className={styles.ancora} href='#'>
+                    {/* <a className={styles.ancora} href='#'>
                         Gerar meu cardápio
-                    </a>
+                    </a> */}
+                    <Botao>Gerar meu cardápio</Botao>
                 </div>
-
             </main>
         </div>
     );
