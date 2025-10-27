@@ -1,0 +1,36 @@
+:root {
+    /* paleta de verde */
+    --plt-vrd-009: #022c22;
+    --plt-vrd-008: #047857;
+    --plt-vrd-007: #059669;
+    --plt-vrd-006: #064e3b;
+    --plt-vrd-005: #065f46;
+    --plt-vrd-004: #34d399;
+    --plt-vrd-003: #6ee7b7;
+    --plt-vrd-002: #a7f3d0;
+    --plt-vrd-001: #d1fae5;
+
+    /* paleta de azul */
+    --plt-az-004: #1f2937;
+    --plt-az-003: #374151;
+    --plt-az-002: #4b5563;
+    --plt-az-001: #6b7280;
+
+    /* paleta de branco */
+    --plt-brc-005: #f1f8e9;
+    --plt-brc-004: #f3f4f6;
+    --plt-brc-003: #f9fafb;
+    --plt-brc-002: #fffde7;
+    --plt-brc-001: #ffffff;
+
+    /* paleta de alerta */
+    --plt-alrt-002: #dc2626;
+    --plt-alrt-001: #f97316;
+
+    /* paleta de cinza */
+    --plt-cnz-005: #555555;
+    --plt-cnz-004: #888888;
+    --plt-cnz-003: #e0f2f1;
+    --plt-cnz-002: #f1f1f1;
+    --plt-cnz-001: #fafafa;
+}
