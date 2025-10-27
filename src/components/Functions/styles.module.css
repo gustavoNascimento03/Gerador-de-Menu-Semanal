@@ -30,7 +30,7 @@
 }
 
 .passos {
-    /* o text-align já veio do 'stepsGrid */
+    /* o text-align já veio do 'containerPassos */
 }
 
 .passoNumero {
@@ -53,14 +53,13 @@
 }
 
 @media (min-width: 768px) {
-  
-  /* Ajusta o título */
-  .title {
-    font-size: 2.25rem;
-  }
+    /* Ajusta o título */
+    .title {
+        font-size: 2.25rem;
+    }
 
-  /* Muda o grid para 3 colunas */
-  .stepsGrid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
+    /* Muda o grid para 3 colunas */
+    .containerPassos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }

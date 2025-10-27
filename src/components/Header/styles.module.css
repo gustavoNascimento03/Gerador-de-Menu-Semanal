@@ -6,8 +6,10 @@
     padding: 1.5rem;
 
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .title {
@@ -18,12 +20,12 @@
 }
 
 .ancora {
-    display: none;
-
     color: #047857;
     font-weight: 600;
+    /* text-align: right; */
 
     transition: color 0.2s ease-in-out;
+    text-decoration: none;
 }
 
 .ancora:hover {
