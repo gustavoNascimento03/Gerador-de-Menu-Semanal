@@ -5,9 +5,9 @@ export function Header() {
         <header className={styles.headerContainer}>
             <h1 className={styles.title}>Menu Semanal</h1>
 
-            <a src="./Features" className={styles.ancora}>
+            {/* <a src="./Features" className={styles.ancora}>
                 Recursos
-            </a>
+            </a> */}
         </header>
     );
 }

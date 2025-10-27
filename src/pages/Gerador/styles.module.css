@@ -1,0 +1,347 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.gradientbg {
+    position: relative;
+    z-index: 1;
+    max-width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+.gradientbg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(270deg, #e0f2f1, #f1f8e9, #fffde7, #e0f2f1);
+    background-size: 400% 400%;
+    animation: gradientAnimation 20s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #065f46;
+}
+
+@media (min-width: 768px) {
+    .title {
+        font-size: 3rem;
+    }
+}
+
+.subtitle {
+    font-size: 1.125rem;
+    color: #4b5563;
+    margin-top: 0.5rem;
+}
+
+.controlsGrid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 640px) {
+    .controlsGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* --- Card do Dia (DayCard) --- */
+.dayCard {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e5e7eb;
+}
+
+.dayTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #047857;
+    margin-bottom: 1rem;
+}
+
+.mealsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* --- Card da Refeição (MealCard) --- */
+.mealCard {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 0.75rem;
+}
+
+.mealCard:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.mealTitle {
+    font-weight: 600;
+    color: #6b7280;
+}
+
+.mealRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.25rem;
+}
+
+.recipeLink {
+    font-size: 1.125rem;
+    cursor: pointer;
+    color: #1f2937;
+    font-weight: 500;
+}
+.recipeLink:hover {
+    color: #059669;
+}
+
+.mealMeta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-shrink: 0;
+}
+
+.metaItem {
+    display: flex;
+    align-items: center;
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+.metaItem img {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-right: 0.25rem;
+}
+.metaIconFire {
+    color: #f97316;
+}
+
+.reloadButton {
+    padding: 0.25rem;
+    border: none;
+    background: none;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    line-height: 0;
+}
+.reloadButton:hover {
+    background-color: #e5e7eb;
+}
+.reloadButton img {
+    height: 1.25rem;
+    width: 1.25rem;
+    color: #4b5563;
+}
+
+/* --- Estilos do Modal (RecipeModal e ShoppingListModal) --- */
+.modalBackdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    z-index: 50;
+
+    opacity: 0;
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.modalContent {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    transform: scale(0.95);
+    animation: scaleIn 0.3s ease forwards 0.05s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes scaleIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0.5;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.modalContentRecipe {
+    max-width: 672px;
+}
+.modalContentShopping {
+    max-width: 512px;
+}
+
+.modalHeader {
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.modalTitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #065f46;
+}
+
+.modalCloseBtn {
+    font-size: 2rem;
+    color: #6b7280;
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+}
+.modalCloseBtn:hover {
+    color: #dc2626;
+}
+
+.modalBody {
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+.receitascroll::-webkit-scrollbar {
+    width: 8px;
+}
+.receitascroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.receitascroll::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.receitascroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.recipeContent h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #374151;
+}
+.recipeContent h3:not(:first-child) {
+    margin-top: 1.5rem;
+}
+.recipeContent ul,
+.recipeContent ol {
+    list-style-position: inside;
+    color: #4b5563;
+    padding-left: 0;
+}
+.recipeContent ul {
+    list-style-type: disc;
+}
+.recipeContent ol {
+    list-style-type: decimal;
+}
+.recipeContent li {
+    margin-bottom: 0.5rem;
+}
+
+.shoppingList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.shoppingList li {
+    padding: 0.5rem;
+    border-bottom: 1px solid #e5e7eb;
+    color: #374151;
+}
+.shoppingList li:last-child {
+    border-bottom: none;
+}
+
+.modalFooter {
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-top: 1px solid #e5e7eb;
+    text-align: right;
+    flex-shrink: 0;
+}
+
+.copyButton {
+    color: #ffffff;
+    background-color: #059669;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.copyButton:hover {
+    background-color: #047857;
+}
