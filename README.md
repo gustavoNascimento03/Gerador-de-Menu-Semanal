@@ -12,7 +12,9 @@ Chega de "o que vamos comer hoje?". Bora organizar essa cozinha!
 
 -   **Geração Automágica:** Cria um cardápio completo (café, almoço, jantar) para 7 dias com um clique.
 -   **Adaptação Total:** Escolha entre dietas **sem restrição**, **vegetarianas** ou **veganas**. O cardápio se ajusta na hora!
-    ![**sem restrição**](public/Srestrição.png)![**vegetarianas**](public/Vegetariano.png)![**veganas**](public/Vegano.png)
+    ![Sem restrição](public/Srestrição.png)
+    ![vegetarianas](public/Vegetariano.png)
+    ![veganas](public/Vegano.png)
 -   **Flexibilidade:** Não curtiu uma sugestão? Troque _qualquer_ refeição individualmente clicando no ícone de "reload". Chega de cardápio engessado!
 -   **Detalhes da Receita:** Clique no nome de um prato para abrir um modal limpinho com os **ingredientes** e o **modo de preparo**.
     ![Receita](public/Receita.png)
@@ -45,7 +47,7 @@ Quer botar a mão na massa e ver a mágica acontecer? Segue o papo:
     ```
 2.  **Navegue até a Pasta:**
     ```bash
-    cd menu-semanal
+    cd Gerador-de-Menu-Semanal
     ```
 3.  **Instale as Dependências:** (Precisa ter o Node.js ou npm/yarn instalado, né?)
     ```bash
@@ -65,4 +67,4 @@ Pronto! O app tá rodando na sua máquina. Agora é explorar e quebrar (pra depo
 
 ## 👨‍💻 Autor
 
-Feito com 💚 por Gustavo S. Nascimento !!!
+Feito com 💚 por Gustavo S. Nascimento.
