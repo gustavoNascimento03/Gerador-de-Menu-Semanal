@@ -1,7 +1,7 @@
 .rodape {
     text-align: center;
     padding: 1.5rem;
-    color: #6b7280;
+    color: var(--plt-az-001);
     border-top: 1px solid #e5e7eb;
     font-size: 0.875rem;
 }

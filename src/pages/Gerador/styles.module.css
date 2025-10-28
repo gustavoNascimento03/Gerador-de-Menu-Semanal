@@ -21,7 +21,13 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: linear-gradient(270deg, #e0f2f1, #f1f8e9, #fffde7, #e0f2f1);
+    background: linear-gradient(
+        270deg,
+        var(--plt-cnz-003),
+        var(--plt-brc-005),
+        var(--plt-brc-002),
+        var(--plt-cnz-003)
+    );
     background-size: 400% 400%;
     animation: gradientAnimation 20s ease infinite;
 }
@@ -48,7 +54,7 @@ body {
 .title {
     font-size: 2.25rem;
     font-weight: 700;
-    color: #065f46;
+    color: var(--plt-vrd-005);
 }
 
 @media (min-width: 768px) {
@@ -59,7 +65,7 @@ body {
 
 .subtitle {
     font-size: 1.125rem;
-    color: #4b5563;
+    color: var(--plt-az-004);
     margin-top: 0.5rem;
 }
 
@@ -85,7 +91,7 @@ body {
 
 /* --- Card do Dia (DayCard) --- */
 .dayCard {
-    background-color: #ffffff;
+    background-color: var(--plt-brc-001);
     padding: 1.5rem;
     border-radius: 0.75rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
@@ -96,7 +102,7 @@ body {
 .dayTitle {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #047857;
+    color: var(--plt-vrd-008);
     margin-bottom: 1rem;
 }
 
@@ -122,7 +128,7 @@ body {
 
 .mealTitle {
     font-weight: 600;
-    color: #6b7280;
+    color: var(--plt-az-001);
 }
 
 .mealRow {
@@ -135,11 +141,11 @@ body {
 .recipeLink {
     font-size: 1.125rem;
     cursor: pointer;
-    color: #1f2937;
+    color: var(--plt-az-004);
     font-weight: 500;
 }
 .recipeLink:hover {
-    color: #059669;
+    color: var(--plt-vrd-007);
 }
 
 .mealMeta {
@@ -152,7 +158,7 @@ body {
 .metaItem {
     display: flex;
     align-items: center;
-    color: #6b7280;
+    color: var(--plt-az-001);
     font-size: 0.875rem;
 }
 .metaItem img {
@@ -161,7 +167,7 @@ body {
     margin-right: 0.25rem;
 }
 .metaIconFire {
-    color: #f97316;
+    color: var(--plt-alrt-001);
 }
 
 .reloadButton {
@@ -179,7 +185,7 @@ body {
 .reloadButton img {
     height: 1.25rem;
     width: 1.25rem;
-    color: #4b5563;
+    color: var(--plt-az-004);
 }
 
 /* --- Estilos do Modal (RecipeModal e ShoppingListModal) --- */
@@ -198,7 +204,7 @@ body {
 }
 
 .modalContent {
-    background-color: #ffffff;
+    background-color: var(--plt-brc-001);
     border-radius: 1rem;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     max-height: 90vh;
@@ -249,19 +255,19 @@ body {
 .modalTitle {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #065f46;
+    color: var(--plt-vrd-005);
 }
 
 .modalCloseBtn {
     font-size: 2rem;
-    color: #6b7280;
+    color: var(--plt-az-001);
     background: none;
     border: none;
     cursor: pointer;
     line-height: 1;
 }
 .modalCloseBtn:hover {
-    color: #dc2626;
+    color: var(--plt-az-004);
 }
 
 .modalBody {
@@ -273,7 +279,7 @@ body {
     width: 8px;
 }
 .receitascroll::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--plt-cnz-002);
     border-radius: 10px;
 }
 .receitascroll::-webkit-scrollbar-thumb {
@@ -289,7 +295,7 @@ body {
     font-weight: 600;
     margin-top: 0;
     margin-bottom: 0.5rem;
-    color: #374151;
+    color: var(--plt-az-004);
 }
 .recipeContent h3:not(:first-child) {
     margin-top: 1.5rem;
@@ -297,7 +303,7 @@ body {
 .recipeContent ul,
 .recipeContent ol {
     list-style-position: inside;
-    color: #4b5563;
+    color: var(--plt-az-004);
     padding-left: 0;
 }
 .recipeContent ul {
@@ -318,7 +324,7 @@ body {
 .shoppingList li {
     padding: 0.5rem;
     border-bottom: 1px solid #e5e7eb;
-    color: #374151;
+    color: var(--plt-az-004);
 }
 .shoppingList li:last-child {
     border-bottom: none;
@@ -326,15 +332,15 @@ body {
 
 .modalFooter {
     padding: 1rem;
-    background-color: #f9fafb;
+    background-color: var(--plt-brc-003);
     border-top: 1px solid #e5e7eb;
     text-align: right;
     flex-shrink: 0;
 }
 
 .copyButton {
-    color: #ffffff;
-    background-color: #059669;
+    color: var(--plt-brc-001);
+    background-color: var(--plt-vrd-007);
     font-weight: 600;
     padding: 0.5rem 1rem;
     border: none;
@@ -343,5 +349,5 @@ body {
     transition: background-color 0.3s;
 }
 .copyButton:hover {
-    background-color: #047857;
+    background-color: var(--plt-vrd-008);
 }

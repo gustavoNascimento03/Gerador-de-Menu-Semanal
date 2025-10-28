@@ -16,11 +16,11 @@
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 700;
-    color: #065f46;
+    color: var(--plt-vrd-005);
 }
 
 .ancora {
-    color: #047857;
+    color: var(--plt-vrd-008);
     font-weight: 600;
     /* text-align: right; */
 
@@ -29,7 +29,7 @@
 }
 
 .ancora:hover {
-    color: #064e3b;
+    color: var(--plt-vrd-006);
 }
 
 @media (min-width: 640px) {

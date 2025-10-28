@@ -19,7 +19,7 @@
 .titulo {
     font-size: 1.875rem;
     font-weight: 700;
-    color: #065f46;
+    color: var(--plt-vrd-005);
 }
 
 .containerPassos {
@@ -36,7 +36,7 @@
 .passoNumero {
     font-size: 3rem;
     font-weight: 900;
-    color: #a7f3d0;
+    color: var(--plt-vrd-002);
     line-height: 1;
 }
 
@@ -44,12 +44,12 @@
     font-size: 1.25rem;
     font-weight: 700;
     margin-top: 1rem;
-    color: #065f46;
+    color: var(--plt-vrd-005);
 }
 
 .passoDescr {
     margin-top: 0.5rem;
-    color: #4b5563;
+    color: var(--plt-az-004);
 }
 
 @media (min-width: 768px) {

@@ -13,18 +13,18 @@
 .texto {
     font-size: 2.25rem;
     font-weight: 900;
-    color: #064e3b;
+    color: var(--plt-vrd-006);
     line-height: 1.25;
 }
 
 .spamTexto {
-    color: #059669;
+    color: var(--plt-vrd-007);
 }
 
 .paragrafo {
     margin-top: 1.5rem;
     font-size: 1.125rem;
-    color: #4b5563;
+    color: var(--plt-az-004);
     max-width: 48rem;
     margin-left: auto;
     margin-right: auto;
@@ -36,8 +36,8 @@
 
 /* .ancora {
     display: inline-block;
-    background-color: #059669;
-    color: #ffffff;
+    background-color: var(--plt-vrd-007);
+    color: var(--plt-brc-001);
     font-weight: 700;
     font-size: 1.125rem;
 
@@ -49,7 +49,7 @@
 }
 
 .ancora:hover {
-    background-color: #047857;
+    background-color: var(--plt-vrd-008);
 }
 
 .ancora:active {

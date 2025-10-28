@@ -1,8 +1,8 @@
 .sectionGeral {
     padding-top: 5rem;
     padding-bottom: 5rem;
-    background-color: #047857;
-    color: #ffffff;
+    background-color: var(--plt-vrd-008);
+    color: var(--plt-brc-001);
 }
 
 .containerGeral {
@@ -22,7 +22,7 @@
 .paragrafo {
     margin-top: 1rem;
     font-size: 1.125rem;
-    color: #a7f3d0;
+    color: var(--plt-vrd-002);
     max-width: 42rem;
     margin-left: auto;
     margin-right: auto;
@@ -41,10 +41,10 @@
     padding: 0.75rem 1.5rem;
     border-radius: 0.375rem;
 
-    background-color: #ffffff;
-    color: #065f46;
+    background-color: var(--plt-brc-001);
+    color: var(--plt-vrd-005);
 
-    border: 2px solid #064e3b;
+    border: 2px solid var(--plt-vrd-006);
 
     box-shadow: 0 4px 6px -1px rgba(6, 78, 59, 0.4), 0 2px 4px -1px rgba(6, 78, 59, 0.3);
 
@@ -52,7 +52,7 @@
 }
 
 .botao:hover {
-    background-color: #f3f4f6;
+    background-color: var(--plt-brc-004);
     transform: translateY(-2px);
     box-shadow: 0 10px 15px -3px rgba(6, 78, 59, 0.4), 0 4px 6px -2px rgba(6, 78, 59, 0.3);
 }
@@ -62,7 +62,7 @@
 } */
 
 @media (min-width: 768px) {
-  .title {
-    font-size: 2.25rem;
-  }
+    .title {
+        font-size: 2.25rem;
+    }
 }

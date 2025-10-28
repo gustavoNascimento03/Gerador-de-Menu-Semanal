@@ -10,7 +10,7 @@ export function ShoppingListModal({ menu, onClose }) {
 
     const aggregatedList = useMemo(() => {
         console.log(
-            "Mestre Fullstack: Recalculando a lista de compras... (só deve rodar 1x)"
+            "Recalculando a lista de compras..."
         );
 
         const allReceitas = Object.values(menu).flatMap((day) =>

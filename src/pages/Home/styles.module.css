@@ -17,7 +17,13 @@ body {
     right: 0;
     bottom: 0;
     z-index: -1;
-    background: linear-gradient(270deg, #e0f2f1, #f1f8e9, #fffde7, #e0f2f1);
+    background: linear-gradient(
+        270deg,
+        var(--plt-cnz-003),
+        var(--plt-brc-005),
+        var(--plt-brc-002),
+        var(--plt-cnz-003)
+    );
     background-size: 400% 400%;
     animation: gradientAnimation 20s ease infinite;
 }
