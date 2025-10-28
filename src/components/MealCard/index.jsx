@@ -3,7 +3,7 @@ import styles from "../../pages/Gerador/styles.module.css";
 const ImagemReload = () => (
     <img
         className={styles.iconMealCard}
-        src="src\assets\reload.svg"
+        src="\reload.svg"
         alt="Icone de reload"
     ></img>
 );
@@ -11,7 +11,7 @@ const ImagemReload = () => (
 const ImagemCalories = () => (
     <img
         className={styles.iconMealCard}
-        src="src\assets\calories.svg"
+        src="\calories.svg"
         alt="Icone de calories"
     ></img>
 );
@@ -19,7 +19,7 @@ const ImagemCalories = () => (
 const ImagemUser = () => (
     <img
         className={styles.iconMealCard}
-        src="src\assets\user.svg"
+        src="\user.svg"
         alt="Icone de user"
     ></img>
 );

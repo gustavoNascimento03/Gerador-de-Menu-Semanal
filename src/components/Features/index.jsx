@@ -21,7 +21,7 @@ export function Features() {
                         <div className={styles.featuresCampTexto}>
                             <img
                                 className={styles.featuresImagem}
-                                src="./src/assets/heart.svg"
+                                src="/heart.svg"
                                 alt="Imagem de um coração"
                             ></img>
                         </div>
@@ -40,7 +40,7 @@ export function Features() {
                         <div className={styles.featuresCampTexto}>
                             <img
                                 className={styles.featuresImagem}
-                                src="./src/assets/human.svg"
+                                src="/human.svg"
                                 alt="Imagem de uma  pessoa"
                             ></img>
                         </div>
@@ -59,7 +59,7 @@ export function Features() {
                         <div className={styles.featuresCampTexto}>
                             <img
                                 className={styles.featuresImagem}
-                                src="./src/assets/shop.svg"
+                                src="/shop.svg"
                                 alt="Imagem de uma loja"
                             ></img>
                         </div>
